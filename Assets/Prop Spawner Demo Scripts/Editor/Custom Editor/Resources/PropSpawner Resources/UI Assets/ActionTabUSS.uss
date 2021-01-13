@@ -1,0 +1,13 @@
+﻿
+#action-tab
+{	
+	border-color: black;
+	border-bottom-width: 1px;
+	padding: 2px;
+}
+
+.unity-button
+{	
+	width: 30px;
+	flex-shrink: 1;
+}

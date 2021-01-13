@@ -1,0 +1,65 @@
+﻿
+#sub-root
+{
+	flex-grow: 1;
+}
+
+#panel-container
+{
+	flex-grow: 1;
+}
+
+#divider
+{
+	/* set min-width in c# */
+	cursor: resize-horizontal;
+	border-color: black;
+	opacity: .5;
+	border-left-width: 1px;
+}
+
+#details-panel
+{
+	/* set min-width in c# */
+	flex-grow: 1;
+}
+
+
+
+
+.row-container 
+{
+	flex-direction: row;
+}
+
+.label
+{
+	max-width: 90%;
+	overflow: hidden;	
+	-unity-text-align: middle-left;
+}
+
+.title
+{
+	font-size: 14px;
+	flex-shrink: 1;
+	margin-bottom: 5px;
+}
+
+.header
+{
+	margin-left: 15px;
+}
+
+.section
+{
+	margin-top: 10px;
+}
+
+/*Debug Border*/
+.debug-borders
+{
+	border-color: white;
+	border-width: 1px;
+	margin: 2px;
+}

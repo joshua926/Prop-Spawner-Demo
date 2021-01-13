@@ -1,0 +1,16 @@
+﻿
+#asset-panel-scrollview
+{
+	flex-grow: 1;
+}
+
+#asset-container
+{
+	flex-grow: 1;
+}
+
+.asset-panel-spacer
+{
+	width: 100px;
+	height: 100px;
+}

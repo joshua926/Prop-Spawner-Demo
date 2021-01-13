@@ -1,0 +1,44 @@
+﻿
+.rules-details-tile
+{
+	margin-bottom: 15px;
+}
+
+.object-field
+{	 
+	flex-grow: 1;
+	flex-shrink: 1;
+	min-width: 25px;
+}
+
+.big-label
+{
+	min-width: 75px;
+}
+
+.min-max-label 
+{
+	width: 35px;
+} 
+
+.float-field 
+{
+	flex-grow: 1;
+	
+}
+
+.radius-field .unity-base-field__label,
+.prefab-field .unity-base-field__label
+{
+	min-width: 85px;
+}
+
+.float-field,.rot-scl-field,.zone-size-field
+{
+	flex-grow: 1;
+}
+
+.use-toggle
+{
+	max-width: 200px;
+}

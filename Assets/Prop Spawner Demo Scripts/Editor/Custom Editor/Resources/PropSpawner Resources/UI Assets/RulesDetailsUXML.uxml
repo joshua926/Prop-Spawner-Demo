@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<en:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:en="UnityEngine.UIElements"
+    xmlns:ed="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd"
+>
+    <en:VisualElement class="section">
+        <en:Label binding-path="m_Name" class ="title"/>
+        <ed:ObjectField label ="Prefab" binding-path="prefab" class ="prefab-field"/>
+    </en:VisualElement>
+
+    <en:VisualElement class ="section">
+        <en:Label text ="Radii" class ="label header"/>
+        <ed:FloatField label ="Base" binding-path="baseRadius" class ="radius-field"/>
+        <ed:FloatField label ="Same Model" binding-path="sameModelRadius" class ="radius-field"/>
+    </en:VisualElement>
+
+    <en:VisualElement class ="section">
+        <en:Label text ="Rotation" class ="label header"/>
+        <en:VisualElement class ="row-container">
+            <en:Label text ="Min" class ="label min-max-label"/>
+            <ed:Vector3Field binding-path="rotationMin" class ="rot-scl-field"/>
+        </en:VisualElement>
+        <en:VisualElement class ="row-container">
+            <en:Label text ="Max" class ="label min-max-label"/>
+            <ed:Vector3Field binding-path="rotationMax" class ="rot-scl-field"/>
+        </en:VisualElement>
+        <en:Label text ="Scale" class ="label header"/>
+        <en:VisualElement class ="row-container">
+            <en:Label text ="Min" class ="label min-max-label"/>
+            <ed:Vector3Field binding-path="scaleMin" class ="rot-scl-field"/>
+        </en:VisualElement>
+        <en:VisualElement class ="row-container">
+            <en:Label text ="Max" class ="label min-max-label"/>
+            <ed:Vector3Field binding-path="scaleMax" class ="rot-scl-field"/>
+        </en:VisualElement>
+    </en:VisualElement>
+
+    <en:VisualElement class ="section">
+        <en:VisualElement class ="row-container use-ecs-section">
+            <en:Toggle binding-path="useECSRendering" class ="use-ecs-rendering use-toggle"/>
+            <en:Label text ="Use ECS Rendering" class ="label"
+                        tooltip="Render this prefab's meshes using ECS. For best performance, you should enable GPU instancing in the prefab's materials."
+                    />
+        </en:VisualElement>
+
+        <en:VisualElement class ="row-container keep-gameobjects-section">
+            <en:Toggle binding-path="keepGameObjects" class ="keep-gameobjects use-toggle"/>
+            <en:Label text ="Keep GameObjects" class ="label"
+                        tooltip="Keep the instantiated GameObjects and all their components except mesh filters, mesh renderers, and LOD groups. For best performance, you should set this to false."
+                    />
+        </en:VisualElement>
+    </en:VisualElement>
+
+    <en:VisualElement class ="section zone-size-section">
+        <en:Label text ="ECS Render Zone Size" class ="label header"/>
+        <ed:Vector2Field binding-path="zoneSize" class ="zone-size-field"/>
+    </en:VisualElement>
+
+    <en:VisualElement class ="section">
+        <en:Button text ="Delete Rules Asset" class ="delete-button"/>
+    </en:VisualElement>
+</en:UXML>

@@ -1,0 +1,27 @@
+﻿.unity-label
+{
+	min-width: 85px;
+}
+
+.close-button
+{
+	width: 25px;
+	margin: 15px;
+}
+
+.row-container
+{
+	justify-content: space-between;
+}
+
+.title
+{
+	align-self: center;
+}
+
+/*debug borders*/
+.test
+{
+	border-color: white;
+	border-width: 1px;
+}

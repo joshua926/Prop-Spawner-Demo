@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<en:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:en="UnityEngine.UIElements"
+    xmlns:ed="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd"
+>
+    <en:VisualElement class ="row-container" name ="sub-root">        
+
+        <en:VisualElement name ="divider"/>
+
+        <en:ScrollView name ="details-panel"/>
+
+    </en:VisualElement>
+</en:UXML>

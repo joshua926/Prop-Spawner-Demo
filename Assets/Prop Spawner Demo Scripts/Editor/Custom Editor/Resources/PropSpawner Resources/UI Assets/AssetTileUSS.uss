@@ -1,0 +1,27 @@
+﻿.asset-tile
+{
+	overflow: hidden;
+	padding: 3px;
+}
+
+.asset-icon
+{
+	flex-grow: 1;
+}
+
+.is-enabled-toggle
+{
+	margin: 0px;
+}
+
+.asset-name
+{
+	flex-shrink: 1;
+}
+
+/*debug borders*/
+.test, 
+{ 
+	border-color: white;
+	border-width: 1px;
+}

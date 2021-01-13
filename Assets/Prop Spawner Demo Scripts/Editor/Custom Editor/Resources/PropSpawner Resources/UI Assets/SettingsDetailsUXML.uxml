@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<en:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:en="UnityEngine.UIElements"
+    xmlns:ed="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd"
+>
+    <en:VisualElement class ="row-container">
+        <en:Label text ="Settings" class ="title"/>
+        <en:Button text ="X" class ="close-button"/>
+    </en:VisualElement>
+    <ed:ObjectField label="Terrain"/>
+    <ed:IntegerField label ="Samples" binding-path="samples"/>
+    <en:Slider label ="Icon Size" low-value ="0" high-value ="1" binding-path="iconSize" name ="icon-size-slider"/>
+    <en:Toggle label ="Refresh Editor" binding-path ="isRefreshingEditor" class ="is-refreshing-editor-toggle" tooltip ="Refresh editor every .5 seconds to ensure that ECS Renderers update in edit mode. Play mode and builds are unaffected."/>
+</en:UXML>
