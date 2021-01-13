@@ -1,4 +1,5 @@
 *This is a prototype of an in-development tool so there will be bugs.
+-Watch a video demoing the tool here https://youtu.be/1V8wDqNG2M4
 
 Make sure you have these packages installed:
 1. Burst
